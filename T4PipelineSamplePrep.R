@@ -3,7 +3,7 @@
 rm(list = ls())
 library(dplyr)
 
-sample <- read.delim("~/Desktop/Stuff/AMeyer_Lab/Experiment_results/3seq/T4pipeline-master/BedIrem/316-TermSeqChlndct60.bed", header = FALSE)
+sample <- read.delim("~/Desktop/Stuff/AMeyer_Lab/Experiment_results/3seq/T4pipeline-master/BedIrem/316-TermSeqChlndct0.bed", header = FALSE)
 sample <- sample[,-c(4,5)]
 
 Minus <- sample[sample$V6 %in% "-",]
